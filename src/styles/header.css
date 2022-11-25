@@ -1,0 +1,86 @@
+header {
+  padding-left: 5%;
+  height: 25vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40% 60%;
+}
+
+header nav {
+  display: flex;
+  padding: 4vh 0;
+  padding-left: 10%;
+  background: rgba(255, 255, 255, 0.04) none repeat scroll 0% 0%;
+  backdrop-filter: blur(81.5485px);
+}
+
+header .mobile {
+  display: flex;
+  padding: 4vh 0;
+  padding-left: 10%;
+  background: red;
+}
+
+header nav li a {
+  color: white;
+  margin-right: 30px;
+}
+#icon-hamburguer {
+  cursor: pointer;
+  display: none;
+}
+
+/* button close */
+#button-close {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 775px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  header nav {
+    display: none;
+  }
+  header .close {
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+  header .open {
+    transform: translateX(0);
+    transition: 0.3s;
+    position: absolute;
+    backdrop-filter: blur(8px);
+    background-color: #00968810;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #button-close {
+    display: block;
+  }
+
+  header .open li a {
+    font-size: 25px;
+  }
+  header .open li span {
+    font-size: 25px;
+  }
+  #icon-hamburguer {
+    display: block;
+  }
+}

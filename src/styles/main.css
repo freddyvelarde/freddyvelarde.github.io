@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 775px) {
+  body {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+  }
+}
