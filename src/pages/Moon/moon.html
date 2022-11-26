@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="../../../public/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="./moon.css" />
+    <title>Moon</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../../../public/logo.svg" alt="logo" />
+      </div>
+      <nav id="navbar" class="toggle__navBar close">
+        <!-- button close -->
+        <img
+          onclick="toggleNavBar()"
+          id="button-close"
+          src="../../../assets/shared/icon-close.svg"
+          alt="close-button"
+        />
+
+        <li><a href="../../../index.html">00 Home</a></li>
+        <li><a href="moon.html">01 Moon</a></li>
+        <li><a href="../Mars/mars.html">02 Mars</a></li>
+        <li><a href="../Europe/europe.html">03 Europe</a></li>
+        <li><a href="../Titan/titan.html">04 Titan</a></li>
+      </nav>
+      <img
+        onclick="toggleNavBar()"
+        id="icon-hamburguer"
+        src="../../../assets/shared/icon-hamburger.svg"
+        alt="icon-hamburger"
+      />
+    </header>
+    <div id="content">
+      <h2 id="title"><span>01</span> Pick your destination</h2>
+      <img
+        id="img"
+        src="../../../assets/destination/image-moon.png"
+        alt="moon"
+      />
+      <div class="destination">
+        <h2 id="destination__title">MOON</h2>
+        <p id="destination__info">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <hr />
+        <div class="data">
+          <div>
+            <p>AVG DISTANCE</p>
+            <h2>384,400 km</h2>
+          </div>
+          <div>
+            <p>Est. travel time</p>
+            <h2>3 days</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../javascript/main.js"></script>
+  </body>
+</html>

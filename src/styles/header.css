@@ -36,7 +36,7 @@ header nav li a {
   cursor: pointer;
   position: fixed;
   top: 5%;
-  right: 5%;
+  right: 10%;
 }
 
 /* responsive  */
@@ -55,9 +55,10 @@ header nav li a {
     transition: 0.3s;
   }
   header .open {
+    height: 100vh;
     transform: translateX(0);
     transition: 0.3s;
-    position: absolute;
+    position: fixed;
     backdrop-filter: blur(8px);
     background-color: #00968810;
     top: 0;

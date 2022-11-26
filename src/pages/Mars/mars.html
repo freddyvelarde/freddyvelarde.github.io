@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="../../../public/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="./mars.css" />
+    <title>MARS</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../../../public/logo.svg" alt="logo" />
+      </div>
+      <nav id="navbar" class="toggle__navBar close">
+        <!-- button close -->
+        <img
+          onclick="toggleNavBar()"
+          id="button-close"
+          src="../../../assets/shared/icon-close.svg"
+          alt="close-button"
+        />
+
+        <li><a href="../../../index.html">00 Home</a></li>
+        <li><a href="../Moon/moon.html">01 Moon</a></li>
+        <li><a href="./mars.html">02 Mars</a></li>
+        <li><a href="../Europe/europe.html">03 Europe</a></li>
+        <li><a href="../Titan/titan.html">04 Titan</a></li>
+      </nav>
+      <img
+        onclick="toggleNavBar()"
+        id="icon-hamburguer"
+        src="../../../assets/shared/icon-hamburger.svg"
+        alt="icon-hamburger"
+      />
+    </header>
+    <div id="content">
+      <h2 id="title"><span>02</span> Pick your destination</h2>
+      <img
+        id="img"
+        src="../../../assets/destination/image-mars.png"
+        alt="moon"
+      />
+      <div class="destination">
+        <h2 id="destination__title">MARS</h2>
+        <p id="destination__info">
+          Don’t forget to pack your hiking boots. You’ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          two and a half times the size of Everest!
+        </p>
+        <hr />
+        <div class="data">
+          <div>
+            <p>AVG DISTANCE</p>
+            <h2>225 MIL. km</h2>
+          </div>
+          <div>
+            <p>Est. travel time</p>
+            <h2>3 days</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../javascript/main.js"></script>
+  </body>
+</html>
