@@ -15,6 +15,16 @@ body {
   color: white;
 }
 
+footer {
+  padding: 2vh 5%;
+  background-color: #0b0d19;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(69, 77, 69);
+}
+
 /* responsive  */
 
 @media screen and (max-width: 775px) {

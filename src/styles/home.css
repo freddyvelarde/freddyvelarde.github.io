@@ -19,6 +19,7 @@
 }
 
 .explore span {
+  cursor: pointer;
   border-radius: 150px;
   font-size: 25px;
   display: grid;
@@ -28,6 +29,12 @@
   height: 250px;
   color: black;
   background: white;
+  transition: 0.3s ease-in-out;
+}
+.explore span:hover {
+  color: white;
+  scale: 1.09;
+  background: #0b0d19;
 }
 
 @media screen and (max-width: 950px) {
